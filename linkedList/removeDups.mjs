@@ -20,19 +20,23 @@ function removeDups(ll) {
 
 function removeDupsV2(ll) {
     const dic = {};
-    let n = ll.head;
+    let n = ll.head.next;
+    let nprev = ll.head;
     while(n) {
         if(n.next && dic[n.data]){
-            n.next = n.next.next;
+            nprev = n.next;
+            n = n.next;
+            //n.next = n.next ? n.next.next : null;
         } else {
             dic[n.data] = true;
         }
         n = n.next;
+        nprev = nprev.next;
     }
 }
 
 const ll = new LinkedList(new Node(5));
-ll.appendToTail(2);
+ll.appendToTail(5);
 ll.appendToTail(3);
 ll.appendToTail(5);
 ll.appendToTail(7);

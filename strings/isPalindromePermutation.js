@@ -17,4 +17,4 @@ function isPalindromePermutation(s) {
     return oddCounter >= 0 && oddCounter <=1;
 }
 
-console.log('isPalindromePerm ' + isPalindromePermutation('Anita lavsa la tina'))
+console.log('isPalindromePerm ' + isPalindromePermutation('Anita lava la tina'))

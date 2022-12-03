@@ -29,7 +29,7 @@ const l1 = new LinkedList(new Node('a'));
 l1.appendToTail('n')
 l1.appendToTail('i')
 l1.appendToTail('t')
-l1.appendToTail('e')
+//l1.appendToTail('e')
 l1.appendToTail('i')
 l1.appendToTail('n')
 l1.appendToTail('a')

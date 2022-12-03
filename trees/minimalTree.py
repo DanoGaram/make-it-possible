@@ -1,6 +1,5 @@
 from ctypes import Array
 import math
-from turtle import right
 
 class Node:
     def __init__(self, data: int) -> None:
